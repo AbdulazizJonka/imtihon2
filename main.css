@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+body {
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.nav-links .btn {
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('./images/Frame\ \(1\).png') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.features {
+  padding: 80px 60px;
+  text-align: center;
+  background: #fff;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.intro-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.intro-text h2 span {
+  color: #000;
+  font-weight: bold;
+}
+
+.intro-text p {
+  color: #888;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  padding: 30px;
+  width: 250px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+}
+.orkaimg{
+    background-image: url("./images/Frame\ \(3\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
+    content: "";
+}
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.center-text {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.center-text h1 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #000;
+}
+
+.center-text h1 span {
+  color: #999;
+  font-weight: normal;
+}
+
+.center-text p {
+  font-size: 16px;
+  color: #999;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.center-text a {
+  font-size: 10px;
+  color: #5cb85c;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.text-block {
+  flex: 1;
+}
+
+.text-block h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.text-block p {
+  color: #999;
+  font-size: 1em;
+  margin: 0;
+}
+
+.text-block .subtitle {
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+.text-block .description {
+  font-family: monospace;
+  color: #666;
+  margin-top: 20px;
+}
+
+.highlighted {
+  border: 2px solid #d1bfff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 40px;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+footer a {
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #00b67a;
+  text-decoration: none;
+}
+.Ph4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 40px;
+  flex-wrap: wrap; /* Responsivlik uchun */
+}
+
+.left-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.p1 {
+  color: #2eaf60;
+  font-weight: bold;
+  margin: 0;
+}
+
+.left-label hr {
+  width: 30px;
+  border: none;
+  border-top: 2px solid #2eaf60;
+}
+
+.h4 {
+  flex: 1;
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #000;
+}
+
+.faded {
+  color: #888;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  min-width: 130px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ccc;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  background-color: #0A0E19;
+  color: #ccc;
+}
+
+.footer-left .logo {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  color: white;
+  margin: 0 0 10px;
+}
+
+.footer-left p {
+  font-size: 12px;
+  color: #777;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-links .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links .column a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-links .column a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1); /* makes icons white */
+}
